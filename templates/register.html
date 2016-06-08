@@ -1,0 +1,55 @@
+<!-- loads the login form and hides the navigation bar -->
+      <ion-view class="color">
+	  
+      		<ion-content has-header="false">
+
+    			<div class="login">
+					<div class="login-screen">
+					<div class="app-title">
+
+								<h1 class="animation=slide-left-right">Registration</h1>{{message}}<br>
+                        {{error}}
+						</div>
+						<!-- The entry textboxes including the buttons -->
+							<div class="login-form">
+								<div class="col">
+								<input type="text" class="login-field" value="" placeholder="First Name" id="fname" ng-model="userData.fname">
+							<label class="login-field-icon fui-user"></label>
+								</div>
+
+									<div class="col">
+								<input type="text" class="register-field" value="" placeholder="Last Name" id="lname" ng-model="userData.lname">
+							<label class="register-field-icon fui-user" ></label>
+								</div>
+                                
+                                <div class="col">
+								<input type="text" class="register-field" value="" placeholder="Cell Number" id="cellnum" ng-model="userData.cellnum">
+							<label class="register-field-icon fui-user" ></label>
+								</div>
+                                
+                                <div class="col">
+								<input type="email" class="login-field" value="" placeholder="Email Address" id="email" ng-model="userData.email">
+							<label class="login-field-icon fui-user" ></label>
+								</div>
+                                
+                                <div class="col">
+								<input type="password" class="login-field" value="" placeholder="Password" id="password" ng-model="userData.password">
+							<label class="login-field-icon fui-user" ></label>
+								</div>
+                                
+                                <div class="col">
+								<input type="password" class="login-field" value="" placeholder="Confirm Password" id="confpass" ng-model="userData.confpass">
+							<label class="login-field-icon fui-user" ></label>
+								</div>
+
+									<div class="col">
+									<a class="button1 blue medium" type="submit" ng-click="register(userData)">Register</a>
+									</div>
+                                
+                                <div class="col"></div>
+					</div>
+				</div>
+				</div>
+	        </ion-content>
+	  	
+	  </ion-view>

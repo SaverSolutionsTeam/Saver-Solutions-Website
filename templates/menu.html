@@ -1,0 +1,104 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+          
+      </ion-nav-back-button>
+<!--Side menu-->
+        <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+<!--Dropdown list-->
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-more" ng-click="popover.show($event)">
+        </button>
+      </ion-nav-buttons>
+        
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-content>
+      
+        <div class="body-back">
+	<div class="masthead pdng-stn1">
+		<div id="menu" class="panel" role="navigation">
+			<div class="wrap-content">
+				<div class="search">
+					<form>
+						<input type="search" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}" required="">
+						<input type="submit" value=" ">
+					</form>
+				</div> 
+				<div class="profile-menu text-center">
+					<img class="profile-img img-circle border-effect2" src="../img/africanface.jpg" alt="">
+						<h3>Thandi Sabungile</h3>
+						<h4>Saving Statistics</h4>
+						<div class="pro-menu">
+							<p>Goals</p>
+							<div class="progress">
+							  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+								<span class="sr-only">60% Complete</span>
+							  </div>
+							</div><br>
+							<p>Savings</p>
+							<div class="progress">
+							  <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+								<span class="sr-only">20% Complete</span>
+							  </div>
+							</div><br>
+							<p>Projections</p>
+							<div class="progress">
+							  <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+								<span class="sr-only">40% Complete</span>
+							  </div>
+							</div>
+						</div>
+						<div class="accordion menu-accor">
+							<div class="accordion-section">
+                                
+								<a class="accordion-section-title" href="#accordion-7">Saving Wellness <i class="fa fa-chevron-down"></i><div class="clearfix"></div>
+								</a>
+								<div id="accordion-7" class="accordion-section-content">
+									<ul>
+										<li><a href="#">Level 1</a></li>
+										<li><a href="#">Level 2</a></li>
+										<li><a href="#">Level 3</a></li>
+										<li><a href="#">Level 4</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="accordion-section">
+								<a class="accordion-section-title" href="#accordion-8">Tips <i class="fa fa-chevron-down"></i><div class="clearfix"></div>
+								</a>
+								<div id="accordion-8" class="accordion-section-content">
+									<ul>
+										<li><a href="#">How to save</a></li>
+										<li><a href="#">What to save for</a></li>
+										<li><a href="#">What is interest</a></li>
+										<li><a href="#">How much can I save</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="accordion-section">
+								<a class="accordion-section-title" href="#accordion-9">My Saving goals<i class="fa fa-chevron-down"></i><div class="clearfix"></div>
+								</a>
+								<div id="accordion-9" class="accordion-section-content">
+									<ul>
+										<li><a href="#">Goal 1</a></li>
+										<li><a href="#">Goal 2</a></li>
+										<li><a href="#">Goal 3</a></li>
+										<li><a href="#">Goal 4</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+        
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
